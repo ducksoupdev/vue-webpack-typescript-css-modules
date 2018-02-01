@@ -6,19 +6,6 @@ const env = require('../environment/dev.env')
 
 webpackConfig.module.rules = [...webpackConfig.module.rules,
   {
-    test: /\.scss$/,
-    use: [{
-      loader: 'style-loader'
-    },
-    {
-      loader: 'css-loader'
-    },
-    {
-      loader: 'sass-loader'
-    }
-    ]
-  },
-  {
     test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
     loader: 'file-loader'
   }
